@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Le Rivage Palace</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@latest"></script>
 </head>
 <body>
 
@@ -19,9 +21,6 @@
             <div id="visitors" class="badge visitors">
                 👥 Visiteurs en ligne : 0
             </div>
-
-            
-
 
             <nav>
                 <ul>
@@ -43,6 +42,22 @@
                 <button class="menuButton">Voir le menu</button>
                 <button class="contactButton">Nous contacter</button>
             </section>
+
+            <section class="ai-drink">
+                <h1>☕ Mon Café Intelligent</h1>
+    
+                <div class="upload-section">
+                    <input type="file" id="imageUpload" accept="image/*"> 
+                    <br>
+                    <img id="imagePreview" src="#" alt="Aperçu de la boisson" style="display:none; max-width: 300px;"> 
+                </div>
+
+                <div id="result-container">
+                    <p id="predictionText">Chargez une image pour l'analyser...</p> 
+                    <p id="suggestionText"></p>
+                </div>
+            </section>
+ 
 
             <section class="horaires">
                 <h3>Horaires d’ouverture</h3>

@@ -47,6 +47,34 @@ nav a:hover {
     color: #c49b63;
 }
 
+/*iA */
+.ai-drink {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.ai-drink h2 {
+  color: #5c2c0d;
+  margin-bottom: 10px;
+}
+
+.ai-drink input {
+  margin-top: 15px;
+}
+
+.ai-drink img {
+  margin-top: 15px;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.ai-drink p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
 
 /* CENTER container */
 .header-center {
